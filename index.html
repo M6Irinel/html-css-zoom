@@ -8,6 +8,10 @@
 
     <script src="https://kit.fontawesome.com/09495c5fdc.js" crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>ZOOM</title>
 
     <link rel="stylesheet" href="css/style.css">
@@ -16,7 +20,7 @@
 
 </head>
 
-<body>
+<body class="flex">
     <!-- ALL WEBCAM -->
     <div class="all_webcam">
         <div class="card">
@@ -26,41 +30,39 @@
     </div>
 
     <!-- ALL BUTTONS -->
-    <div class="buttons">
+    <div class="buttons flex">
         <!-- BUTTONS TOP RIGHT -->
-        <div class="top_right">
-            <button><i class="fa-solid fa-grid"></i> Speaker View</button>
-            <button><i class="fa-solid fa-maximize"></i></button>
-        </div>
+        <ul class="top_right flex">
+            <li><button class="speaker"><img src="img/icon-grid-3.png" alt="icon-grid"></img>Speaker View</button></li>
+            <li><button><i class="fa-solid fa-maximize"></i></button></li>
+        </ul>
 
         <!-- BUTTONS BOTTOM LEFT -->
-        <div class="bottom_left">
+        <ul class="bottom_left flex">
             <!-- MUTE -->
-            <buttom class="mute">
-                <i class="fa-solid fa-microphone"></i>
-                <span>Mute</span>
-                <button class="extends"><i class="fa-solid fa-angle-up"></i></button>
-            </buttom>
+            <li><button class="mute"><i class="fa-solid fa-microphone"></i>Mute
+                </button></li>
+            <li><button class="extends"><i class="fa-solid fa-angle-up"></i></button></li>
 
             <!-- STOP VIDEO -->
-            <buttom class="stop_video">
-                <i class="fa-solid fa-video"></i>
-                <span>Stop Video</span>
-                <button class="extends"><i class="fa-solid fa-angle-up"></i></button>
-            </buttom>
-        </div>
+            <li><button class="stop_video"><i class="fa-solid fa-video"></i>Stop Video
+                </button></li>
+            <li><button class="extends"><i class="fa-solid fa-angle-up"></i></button></li>
+        </ul>
 
         <!-- BUTTONS BOTTOM CENTER -->
-        <div class="bottom_center">
-            <button class="invite"><i class="fa-solid fa-user-plus"></i>Invite</button>
-            <button class="manage"><i class="fa-solid fa-user-group"></i>Manage Participants</button>
-            <button class="polling"><i class="fa-solid fa-chart-column"></i></i>Polling</button>
-            <button class="share_screen"><i class="fa-solid fa-share-from-square"></i>Share Screen<button class="extends"><i class="fa-solid fa-angle-up"></i></button></button>
-            <button class="chat"><i class="fa-solid fa-comment"></i>Chat</button>
-            <button class="record"><i class="fa-solid fa-record-vinyl"></i>Record</button>
-            <button class="breakout"><i class="fa-solid fa-grid-2"></i>Breakout Rooms</button>
-            <button class="more"><i class="fa-solid fa-ellipsis"></i></i>More</button>
-        </div>
+        <ul class="bottom_center flex">
+            <li><button class="invite"><i class="fa-solid fa-user-plus"></i>Invite</button></li>
+            <li><button class="manage"><i class="fa-solid fa-user-group"></i>Manage Participants</button></li>
+            <li><button class="polling"><i class="fa-solid fa-chart-column"></i>Polling</button></li>
+            <li><button class="share_screen"><i class="fa-solid fa-share-from-square"></i>Share Screen</button></li>
+            <li><button class="extends"><i class="fa-solid fa-angle-up"></i></button></li>
+            <li><button class="chat"><i class="fa-solid fa-comment"></i>Chat</button></li>
+            <li><button class="record"><i class="fa-solid fa-record-vinyl"></i>Record</button></li>
+            <li><button class="breakout"><img src="img/icon-grid-2.png" alt="icon-grid-2"></img>Breakout Rooms</button>
+            </li>
+            <li><button class="more"><i class="fa-solid fa-ellipsis"></i>More</button></li>
+        </ul>
 
         <!-- BOTTOM RIGHT -->
         <div class="bottom_right">End meeting</div>

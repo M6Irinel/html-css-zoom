@@ -1,0 +1,155 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Roboto', sans-serif;
+   color: white;
+}
+
+ul, ol, menu {list-style: none;}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button i {
+    height: 100%;
+    aspect-ratio: 1/1;
+    color: white;
+}
+
+button img {
+    filter: invert(1);
+}
+
+.flex {
+    display: flex;
+}
+
+body {
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+/* TOP */
+
+.all_webcam {
+    flex-grow: 1;
+}
+
+
+/* BOTTOM */
+/* TOP RIGHT */
+
+.top_right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    gap: 7px;
+    padding: 5px;
+}
+
+.top_right li {
+    background-color: #4A4A4A;
+    border-radius: 5px;
+}
+
+.top_right li button, .top_right .fa-solid {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+}
+
+.top_right img {
+    height: 70%;
+}
+
+.top_right .speaker {
+    padding-right: 5px;
+}
+
+/* BOTTOM LEFT */
+
+.buttons {
+    height: 80px;
+    background-color: #222222;
+    justify-content: space-between;
+}
+
+.buttons ul {
+    display: flex;
+    align-items: center;
+}
+
+.buttons ul[class^='bottom'] li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.buttons ul[class^='bottom'] li button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    height: 100%;
+}
+
+.buttons ul[class^='bottom'] li button:hover:not(button.extends) {
+    background-color: #404040;
+    border-radius: 8px;
+}
+
+.buttons ul[class^='bottom'] li button i:not(.extends i) {
+    font-size: 30px;
+}
+
+.buttons ul[class^='bottom'] li button.extends i {
+    width: 25px;
+    border-radius: 8px;
+}
+
+.buttons ul[class^='bottom'] li button img,
+.buttons ul[class^='bottom'] li button i {
+    height: 45px;
+    aspect-ratio: 1/1;
+    line-height: 45px;
+}
+
+.buttons .extends {
+    margin: 0 -10px;
+}
+
+.share_screen .fa-share-from-square {
+    color: #4bc800;
+}
+
+.buttons .extends i:hover {
+    background-color: #404040;
+}
+
+/* BOTTOM RIGHT */
+
+.bottom_right {
+    color: #ff0000;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    padding: 20px;
+}
+
+.bottom_right:hover {
+    background-color: #404040;
+}
