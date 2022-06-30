@@ -37,7 +37,7 @@ body {
 }
 
 
-/* TOP */
+/* TOP =================================================*/
 
 .all_webcam {
     flex-grow: 1;
@@ -60,7 +60,7 @@ body {
 
 .card .simbol_mute {
     position: absolute;
-    bottom: 4px;
+    bottom: 13px;
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 5px;
@@ -68,8 +68,8 @@ body {
 }
 
 
-/* BOTTOM */
-/* TOP RIGHT */
+/* BOTTOM =================================================*/
+/* TOP RIGHT =================================================*/
 
 .top_right {
     position: absolute;
@@ -104,7 +104,7 @@ body {
     padding-right: 5px;
 }
 
-/* BOTTOM LEFT */
+/* BOTTOM LEFT =================================================*/
 
 .buttons {
     height: 80px;
@@ -167,7 +167,7 @@ body {
     background-color: #404040;
 }
 
-/* BOTTOM RIGHT */
+/* BOTTOM RIGHT =================================================*/
 
 .bottom_right {
     color: #ff0000;
